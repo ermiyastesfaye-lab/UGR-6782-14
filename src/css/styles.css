@@ -27,17 +27,18 @@ body{
 
 }
 .my{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
     width: 489px;
     margin-bottom: 0px;
+    align-items: end;
+    justify-items: start;
     border-bottom: solid;
     margin-bottom: 0px;
     background-color: #1e40af;
 }
 .menu{
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     width: 455px;
     list-style-type: none;
     font-family: sans-serif;
@@ -45,6 +46,7 @@ body{
 }
 .menu li{
     /* border-style: solid; */
+    text-align: center;
     list-style-type: none;
     margin-bottom: 10px;
     display:inline;
@@ -59,14 +61,13 @@ body{
 .menu li a:hover{
     color:black;
 }
-.current{
+a .current{
     color: black;
+    background-color: black
 }
 .intro{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: center;
-    align-items: center;
     background-color: #e4e4e7;
 }
 .meee h1{
@@ -100,17 +101,16 @@ body{
     border-radius: 50%;
 }
 
-
 /* Home */
 .container{
     background-color: #e4e4e7;
 }
 .blog-container{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    display: grid;
+    column-gap: 1rem;
 }
 .Blog-box{
+    display: grid;
     width: 460px;
 }
 .blog1, .blog2{
@@ -147,7 +147,7 @@ body{
     font-weight: bold;
     height: 40px;
     margin: 5px;
-    box-shadow: 1px 1px 4px #1e40af;
+    box-shadow: 1px 1px 4px black;
 }
 .button:hover{
     color: white; 
@@ -156,9 +156,8 @@ body{
 /* About me page */
 .whome{
     /* border-style: solid; */
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    display: grid;
+    column-gap: 1rem;
 }
 .ess p{
     height: 250px;
@@ -173,17 +172,18 @@ body{
     border-radius: 50%;
 }
 .activ{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    justify-items: center;
+    justify-content: space-around;
+    /* border-style: solid; */
     text-align: center;
     width: 100%;
 }
 .hobbie, .movie, .Music, .skill{
     padding: 5px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* display: flex;
+    flex-direction: column; */
 }
 .hobbie ,.movie, .Music, .skill{
     border-bottom: 4px solid #1e40af;
@@ -195,12 +195,15 @@ body{
     width: 461px;
 }
 .blogger{
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     /* border-style: solid; */
     width: 473px;
     justify-content: start;
-    gap: 1rem;
+    column-gap: 1rem;
     border-bottom: solid;
+    border-top: none;
+    border-bottom: none;
     background-color: #1e40af;
 }
 .blogger p{
@@ -218,8 +221,8 @@ body{
     margin-top: 10px;
 }
 .blog-container{
-    display: flex;
-    gap: 1rem;
+    display: grid;
+    column-gap: 1rem;
 }
 .Blog-box{
     width: 460px;
@@ -244,7 +247,8 @@ body{
     
 }
 .feedback{
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     justify-content: space-between;
     margin: 10px;
 }
@@ -255,23 +259,24 @@ body{
 
 
 /* portfolio*/
-.container{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
 .portfolioBox{
     /* border: 5px solid; */
     width: 100%;
     margin-bottom: 10px;
     height: 450px;
     box-shadow: 3px 3px 3px #1e40af;
-   
 
+}
+.container{
+    display: grid;
+    row-gap: 2rem;
 }
 .portfolioBox img{
     /* border: 5px solid; */
     width: 100%;
+}
+.portfolioBox{
+    display: grid;
 }
 /* contact */
 .form{
@@ -293,8 +298,7 @@ h2{
     font-size: 20px;
 }
 .form .inputs{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
@@ -329,7 +333,7 @@ textarea{
     outline: none;
 }
 .btn{
-    display: flex;
+    display: grid;
     /* border: solid; */
     justify-content: center;
     align-items: center;
@@ -356,12 +360,12 @@ button a:hover{
     color: #64748b;
     margin-left: 20px;
     align-items: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    justify-content: center;
 }
 .socialmedia .icon{
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     justify-content: space-evenly;
     width: 400px;
     column-gap: 2px;
@@ -370,26 +374,21 @@ button a:hover{
     width: 30px;
 }
 .adrs{
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    display: grid;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
 }
 .phone, .addrs, .email{
     background-color: white;
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 10px;
-    width: 234px;
     box-shadow: 2px 2px 4px #1e40af;
-
 }
 .adrsicon{
-    display: flex;
+    display: grid;
     justify-content: center;
-    border-bottom: solid;
+    border-bottom: solid #1e40af;
 }
 .adress{
     color: black;
@@ -399,40 +398,41 @@ button a:hover{
 a{
     text-decoration: none;
 }
+.map{
+    box-shadow: 2px 2px 4px #1e40af;
+}
 iframe{
     width: 489px;
     height: 400px;
 }
-.map{
-    box-shadow: 2px 2px 4px #1e40af;
-}
+
 
 .footer{
     background-color: #1e40af;
     width: 489px;
 }
 .foot{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     border-top: solid;
     border-bottom: solid;
     margin-top: 10px;
+    grid-template-rows: 50px;
     width: 481px;
-    gap: 0px;
 }
 .logo{
     font-size: 25px;
-    display: flex;
+    display: grid;
     justify-content: center;
 }
 .social{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     width: 481px;
     justify-content: center;
+    grid-template-rows: 80px;
 }
 .Sociallinks{
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     justify-content: space-evenly;
     width: 400px;
 }
@@ -447,7 +447,7 @@ iframe{
     text-align: center;
 }
 .end{
-    display: flex;
+    display: grid;
     justify-content: center;
     color: black;
 }
