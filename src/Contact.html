@@ -3,104 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header class="header">
-        <div class="my">
-            <h1 class="logo">Ermi T.</h1>
-            <nav>
-                <ul class="menu">
-                    <li><a href="Index.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Blog.html">Blog</a></li>
-                    <li><a href="Porfolio.html">Portfolio</a></li>
-                    <li><a class="current" href="Contact.html">Contact</a></li>
-                </ul>
+<body class="has-text-grey-light" style="background: linear-gradient(41deg, rgba(13, 21, 37, 1) 0%, rgba(37, 45, 81, 1) 62%, rgba(17, 22, 44, 1) 100%); background-size: cover;">
+  <header>
+    <div class="columns">
+        <div class="column is-12">
+            <nav class="navbar" role="navigation" aria-label="main navigation" id = navbar>
+                <div class="navbar-brand">
+                    <h1 class="title navbar-item ml-6 has-text-white">Ermi T.</h1>
+                </div>
+                <a class="navbar-burger" id="burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
+                <div class="navbar-menu pt-6" id="nav-links">
+                    <div class="navbar-end mr-6">
+                        <a href="Index.html" class="hide-On-mobile navbar-item has-text-white has-text-weight-bold px-6" id="my__menu__current has-text-white">Home</a>
+                        <a href="About.html" class="hide-On-mobile navbar-item has-text-white has-text-weight-bold px-6">About</a>
+                        <a href="Blog.html" class="hide-On-mobile navbar-item has-text-white has-text-weight-bold px-6">Blog</a>
+                        <a href="Portfolio.html" class="hide-On-mobile navbar-item has-text-white has-text-weight-bold px-6">Portfolio</a>
+                        <a href="Contact.html" class="hide-On-mobile navbar-item has-text-white has-text-weight-bold px-6">Contact</a>
+                        <!-- Add more navbar items as needed -->
+                    </div>
+                </div>
             </nav>
         </div>
-        <div class="intro">
-            <div class="meee">
-                <h1>Ermiyas <span>Tesfaye</span></h1>
-                <p>Hello, My name is Ermiyas Tesfaye. I am a software engineering student</p>
-            </div>
-            <div class="me"> 
-                <img src="Image/Leonardo_Diffusion_XL_a_black_cool_cartoon_man_with_a_headset_3.jpg" alt="Ermi">
-            </div>
-        </div>
-    </header>
-    <main class="container contact-container">
-        <div class="form">
-            <h2>Contact me</h2>
-            <div class="inputs">
-                <input  id="name-input" type="text" name="name" placeholder="Enter your name"><br />
-                <input  id="email-input" type="email" name="name" placeholder="Enter your email"><br />
-                <textarea id="message-area" name=""placeholder="Message"></textarea> <br />
-            </div>
-            <div class="btn">
-                <button><a href="">Send message</a></button>
-            </div>
-            <div class="socialmedia">
-                <h2>Social media</h2>
-                    <div class="icon">
-                        <a href="https://www.facebook.com/ermiyas.tesfaye.7545"><img src="Image/icons8-facebook-48.png" alt=""></a>
-                        <a href="https://www.instagram.com/ermi695/"><img src="Image/icons8-instagram-48.png" alt=""></a>
-                        <a href="https://t.me/black6t"><img src="Image/icons8-telegram-48.png" alt=""></a>
-                        <a href="https://www.linkedin.com/in/ermiyas-tesfaye-a96190253/"><img src="Image/icons8-linkedin-48.png" alt=""></a>
-                    </div>
-            </div>
-        </div>
-        <!--Adress info-->
-        <section class="adrs">
-            <div class="phone">
-                <div class="adrsicon">
-                    <img src="Image/icons8-phone-48.png" alt="">
-                </div>
-                <div class="adress">
-                    <p>+251-900-6485-03</p>
-                </div>
-            </div>
-            <div class="addrs">
-                <div class="adrsicon">
-                    <img src="Image/icons8-home-48.png" alt="">
-                </div>
-                <div class="adress">
-                    <p>Bole, Addis Ababa</p>
-                </div>
-            </div>
-            <div class="email">
-                <div class="adrsicon">
-                    <img src="Image/icons8-email-48.png" alt="">
-                </div>
-                <div class="adress">
-                    <p><a href="https://myaccount.google.com/?hl=en">ermiyastesfaye16@gmail.com</a></p>
-                </div>
-            </div>
-        </section>
-        <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3128.7353992499725!2d38.81271290893002!3d8.99439610023895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8529104deb3f%3A0x5c21c9179739aebf!2zUm9iYSBCYWtlcnkgfCBHZXJqaSB8IOGIruGJoyDhi7PhiaYg4YiY4YyL4YyI4Yiq4YurIHwg4YyI4Yit4YyC!5e1!3m2!1sen!2set!4v1701100487250!5m2!1sen!2set" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="foot">
-            <div class="logo">
-                <h4>Ermi T.</h4>
-                <p></p>
-            </div>
-            <div class="social">
-                <h4>Follow Me</h4>
-                <div class="Sociallinks">
-                    <a href="https://www.facebook.com/ermiyas.tesfaye.7545"><img src="Image/icons8-facebook-48.png"></a>
-                    <a href="https://www.instagram.com/ermi695/"><img src="Image/icons8-instagram-48.png"></a>
-                    <a href="https://t.me/black6t"><img src="Image/icons8-telegram-48.png"></a>
-                    <a href="https://www.linkedin.com/in/ermiyas-tesfaye-a96190253/"><img src="Image/icons8-linkedin-48.png"></a>
+    </div>
+    <div class="columns is-8 is-variable">
+        <div class="column is-half">
+            <div class="intro">
+                <div class="intro__meee">
+                    <h1 class="title is-size-1 ml-6" id="title-h1">Ermiyas Tesfaye</h1>
+                    <p class="ml-6">Hello, My name is Ermiyas Tesfaye. I am a software engineering student</p>
                 </div>
             </div>
         </div>
-        <div class="end">
-            <p>&copy; CopyRight 2023</p>
+        <div class="column is-half">
+            <div class="intro__me is-pulled-right">
+                <figure class="mr-6">
+                    <img id="me" src="Image/c.png" alt="Ermi" class="is-large">
+                </figure>
+            </div>
         </div>
+    </div>
+  </header>
+  <main class="container" >
+    <div class="container__form box px-6 py-6">
+      <h2 class="title is-2 has-text-centered has-text-white">Contact me</h2>
+      <div class="container__form__inputs">
+        <input class="input has-text my-4" type="text" id="name" name="name" placeholder="Enter your name" >
+        <!-- <div class="error-text" id="nameError">Full name can't be blank</div> -->
+        <input class="input  my-4" type="email" id="email" name="email" placeholder="Enter your email" >
+        <!-- <div class="error-text" id="emailError">Email can't be blank</div> -->
+        <textarea class="textarea  my-4" id="message" name="message" placeholder="Message"></textarea>
+        <!-- <div class="error-text" id="messageError">Message can't be blank</div> -->
+      </div>
+      <div class="btn">
+        <button type="submit" class="button" id="submit">Send message</button>
+      </div>
+      <div class="container__form__socialmedia">
+        <h2 class="title is-2 has-text-centered has-text-white">Social media</h2>
+        <div class="icon">
+          <a href="https://www.facebook.com/ermiyas.tesfaye.7545"><img src="Image/icons8-facebook-48.png" alt=""></a>
+          <a href="https://www.instagram.com/ermi695/"><img src="Image/icons8-instagram-48.png" alt=""></a>
+          <a href="https://t.me/black6t"><img src="Image/icons8-telegram-48.png" alt=""></a>
+          <a href="https://www.linkedin.com/in/ermiyas-tesfaye-a96190253/"><img src="Image/icons8-linkedin-48.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <section class=" container__adrs columns is-fullwidth is-flex is-justify-content-center">
+      <div class="phone column is-one-third">
+        <div class="adrsicon">
+          <img src="Image/icons8-phone-48.png" alt="">
+        </div>
+        <div class="adress content">
+          <p>+251-900-6485-03</p>
+        </div>
+      </div>
+      <div class="addrs column is-one-third">
+        <div class="adrsicon">
+          <img src="Image/icons8-home-48.png" alt="">
+        </div>
+        <div class="adress content">
+          <p>Bole, Addis Ababa</p>
+        </div>
+      </div>
+      <div class="email column is-one-third">
+        <div class="adrsicon">
+          <img src="Image/icons8-email-48.png" alt="" class="px-6">
+        </div>
+        <div class="adress content">
+          <p><a href="https://myaccount.google.com/?hl=en">ermiyastesfaye16@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3128.7353992499725!2d38.81271290893002!3d8.99439610023895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8529104deb3f%3A0x5c21c9179739aebf!2zUm9iYSBCYWtlcnkgfCBHZXJqaSB8IOGIruGJoyDhi7PhiaYg4YiY4YyL4YyI4Yiq4YurIHwg4YyI4Yit4YyC!5e1!3m2!1sen!2set!4v1701100487250!5m2!1sen!2set" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="is-fullwidth"></iframe>
+    </div>
+  </main>
+      
+    <footer id="footer" class="footer pl-0 pr-0">
+      <div class="columns my-6">
+          <div class="column">
+                  <h1 class="title pl-3 has-text-white">Ermi T.</h1>
+          </div>
+          <div class="column">
+              <div class="content">
+                  <h4 class="has-text-centered has-text-white">Follow Me</h4>
+                  <div class="foot__social__Sociallinks is-flex is-justify-content-space-evenly">
+                      <a href="https://www.facebook.com/ermiyas.tesfaye.7545"><img src="Image/icons8-facebook-48.png" class="is-small is-size-1"></a>
+                      <a href="https://www.instagram.com/ermi695/"><img src="Image/icons8-instagram-48.png" class="is-small is-size-7"></a>
+                      <a href="https://t.me/black6t"><img src="Image/icons8-telegram-48.png" class="is-small is-size-7"></a>
+                      <a href="https://www.linkedin.com/in/ermiyas-tesfaye-a96190253/"><img src="Image/icons8-linkedin-48.png" class="is-small is-size-7"></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="content has-text-centered">
+          <p>&copy; Copyright 2023</p>
+      </div>
     </footer>
+
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

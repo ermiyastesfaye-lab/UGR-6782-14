@@ -1,0 +1,87 @@
+body{
+    background: linear-gradient(41deg, rgba(13,21,37,1) 0%, rgba(37,45,81,1) 62%, rgba(17,22,44,1) 100%);
+    background-size: cover;
+}
+#navbar{
+    background: linear-gradient(41deg, rgba(13, 21, 37, 1) 0%, rgba(37, 45, 81, 1) 62%, rgba(17, 22, 44, 1) 100%);
+    background-size: cover;
+}
+#title-h1{
+    background: linear-gradient(90deg, rgba(147,49,216,1) 0%, rgba(98,102,217,1) 36%, rgba(46,159,219,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+                        
+}
+#me{
+    height: 370px;
+    width: 370px;
+}
+
+/* Footer */
+#footer{
+    background: linear-gradient(41deg, rgba(13, 21, 37, 1) 0%, rgba(37, 45, 81, 1) 62%, rgba(17, 22, 44, 1) 100%);
+    background-size: cover;
+}
+
+/* Home */
+.container__home__blog-box{
+    background: linear-gradient(135deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,0));
+    height: 621px;
+    width: 478px;
+}
+.descr{
+    overflow: scroll;
+}
+.container__view a button{
+    background: linear-gradient(90deg, rgba(147,49,216,1) 0%, rgba(98,102,217,1) 36%, rgba(46,159,219,1) 100%);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 200% 200%;
+    border-radius: 20px;
+    padding: 1.25rem;
+    position: relative;
+    transition: all .15s linear;
+}
+
+/* About */
+#whome{
+    background: linear-gradient(135deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,0)); height: 350px;
+}
+#mee{
+    width: 80%;
+    border-radius: 50%;
+}
+
+/* Blog */
+.blog-box{
+    height: 621px;
+    background: linear-gradient(135deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,0));
+    width: 100%;
+}
+
+/* Portfolio */
+.portfolio-box{
+    background: linear-gradient(135deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,0));
+}
+.container__resume{
+    background: transparent;
+}
+/* Contact */
+.container__form{
+    background: linear-gradient(135deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,0));
+    margin: auto;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 200% 200%;
+    border-radius: 30px;
+    max-width: 340px;
+    position: relative;
+    width: 100%;
+}
+.container__form__inputs input, textarea{
+    background-color: transparent;
+}
+iframe{
+    width: 100%;
+    height: 400px;
+}
