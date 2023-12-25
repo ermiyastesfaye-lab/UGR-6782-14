@@ -4,49 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
-<body>
-    <header class="header">
-        <div class="my">
-            <h1 class="logo">Ermi T.</h1>
-            <nav>
-                <ul class="menu">
-                    <li><a href="Index.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a class="current" href="Blog.html">Blog</a></li>
-                    <li><a href="Porfolio.html">Portfolio</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="intro">
-            <div class="meee">
-                <h1>Ermiyas <span>Tesfaye</span></h1>
-                <p>Hello, My name is Ermiyas Tesfaye. I am a software engineering student</p>
+<body class="px-5 text-dark bg-info">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light pt-5 d-flex align-items-end mx-5">
+            <a class="navbar-brand text-white" href="#"><h1 class="my__logo mt-0 ms-0 ">Ermi T.</h1></a>
+            <button class="navbar-toggler text-white bg-white " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-white"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link fw-bold fs-5 mx-5 text-white " href="Index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold fs-5 mx-5 text-white" href="About.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold fs-5 mx-5 text-light" href="Blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold fs-5 mx-5 text-white" href="Porfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold fs-5 mx-5 text-white " href="Contact.html">Contact</a>
+                </li>
+            </ul>
             </div>
-            <div class="me"> 
-                <img src="Image/Leonardo_Diffusion_XL_a_black_cool_cartoon_man_with_a_headset_3.jpg" alt="Ermi">
+        </nav>
+
+        <div class="container intro">
+            <div class="row">
+                <div class="intro__meee col-md-6 py-5">
+                    <h1 class="text-left font-family-inconsolata text-light text-center text-lg-start ">
+                        Ermiyas Tesfaye
+                    </h1>
+                    <p class="text-center text-lg-start">
+                        Hello, My name is Ermiyas Tesfaye. I am a software engineering student
+                    </p>
+                </div>
+                <div class="intro__me col-md ml-auto">
+                    <img src="Image/c.png" alt="Ermi" class="img-fluid">
+                </div>
             </div>
         </div>
     </header>
-    <main class="container">
-        <div class="blog-container">
-            <div class="blogsec1">
-                <section class="Blog-box blog1">
-                    <div class="blog-img">
-                        <img class="blogimgs" src="Image/web_development.jpg" alt="Web">
+
+    <main class="container w-100 h-auto mb-5">
+        <div class="container__blog d-flex flex-column flex-lg-row gap-5 h-50">
+            <div class="blog sec1 w-100">
+                <section class="container__home__blog-box blog1  rounded-5 p-3 w-100 mb-3 bg-warning bg-opacity-10 me-2 ">
+                    <div class=".container__home__blog-box__blog-img">
+                        <img class="blogimgs w-100 object-fit-cover rounded-top img-fluid" src="Image/Cyber_security.jpg" alt="cyber">
                     </div>
-                    <div class="blogger">
-                        <img src="Image/photo_2023-11-27_17-48-15.jpg" alt="Ermi">
-                        <p>Ermiyas Tesfaye</p>
+                    <div class="blogger row border-bottom mt-3 p-3">
+                        <div class="col-auto">
+                            <i class="bi bi-person-circle fs-2 me-3"></i>
+                        </div>
+                        <div class="col">
+                            <div class="day">
+                                <p class="mb-1"><a href="https://en.wikipedia.org/wiki/Web_development" class="Blog-title fw-bold fs-5 text-decoration-none text-white">Website development</a></p>
+                                <div class="date fw-bold fs-5 text-white">November 27, 2023</div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <div class="date">27 November 2023</div>
-                        <p><a href="https://en.wikipedia.org/wiki/Web_development" class="Blog-title">Website development</a></p>
-                    </div>
-                    <div class="Blog-text">
-                        <p class="descr">Web development is an ever-evolving field that encompasses the creation, design, and maintenance of websites and web applications. It involves a combination of technical skills, creativity, and problem-solving abilities to deliver engaging and functional online experiences.
+                    <div class="container__home__blog-box__blog-text fs-6 overflow-y-scroll h-25 mb-3 p-2">
+                        <p class="descr w-100 p-2overflow-y-scroll ">Web development is an ever-evolving field that encompasses the creation, design, and maintenance of websites and web applications. It involves a combination of technical skills, creativity, and problem-solving abilities to deliver engaging and functional online experiences.
 
                             At its core, web development revolves around coding languages such as HTML, CSS, and JavaScript, which are used to structure and style web pages and incorporate interactive elements. Developers also leverage frameworks and libraries like React, Angular, or Vue.js to streamline development processes and enhance user experiences.
                             
@@ -54,65 +80,57 @@
                             
                             Once the design is finalized, developers move on to the implementation phase, where they write the necessary code to bring the design to life. This involves creating responsive layouts, integrating back-end functionality, and ensuring cross-browser compatibility to ensure optimal performance across different devices and platforms.
                             
-                            Testing and debugging are crucial stages in web development, allowing developers to identify and fix any issues or errors that may arise. This ensures a smooth and error-free user experience.
-                            
-                            Web development also involves considerations for security, performance optimization, and search engine optimization (SEO). Developers implement security measures to protect data and user information, optimize performance to ensure fast loading times, and optimize content and code for better search engine visibility.
-                            
-                            With the rapid advancement of technology, web development is continually evolving. New frameworks, tools, and techniques emerge regularly, offering developers opportunities to create innovative and dynamic web experiences. Staying up to date with the latest trends and continuously learning is essential for web developers to deliver cutting-edge solutions.
-                            
-                            In conclusion, web development is a multifaceted discipline that combines technical skills, creativity, and problem-solving to create functional, visually appealing, and user-friendly websites and web applications. It is an exciting field that offers endless possibilities for innovation and growth in the digital landscape.</p>
+                            Testing and debugging are crucial stages in web development, allowing developers to identify and fix any issues or errors that may arise.</p>
                     </div>
-                    <div class="feedback">
-                        <img src="Image/icons8-heart-50.png">
-                        <img src="Image/icons8-comment-50.png">
+                    <div class="feedback d-flex justify-content-between m-2">
+                        <i class="fa-solid fa-heart fs-3"></i>
                     </div>
                 </section>
-                <section class="Blog-box blog2">
-                    <div class="blog-img">
-                        <img  class="blogimgs" src="Image/AI.jpg" alt="AI">
+                <section class="container__home__blog-box blog2  rounded-5 p-3 w-100 mb-3 bg-warning bg-opacity-10">
+                    <div class="container__home__blog-box__blog-img">
+                        <img  class="blogimgs w-100 object-fit-cover rounded-top img-fluid" src="Image/AI.jpg" alt="AI">
                     </div>
-                    <div class="blogger">
-                        <img src="Image/photo_2023-11-27_17-48-15.jpg" alt="Ermi">
-                        <p>Ermiyas Tesfaye</p>
+                    <div class="blogger row border-bottom mt-3 p-3">
+                        <div class="col-auto">
+                            <i class="bi bi-person-circle fs-2 me-3"></i>
+                        </div>
+                        <div class="col">
+                            <div class="day">
+                                <p class="mb-1"><a href="https://en.wikipedia.org/wiki/Web_development" class="Blog-title fw-bold fs-5 text-decoration-none text-white">Website development</a></p>
+                                <div class="date fw-bold fs-5 text-white">November 27, 2023</div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <div class="date">27 November 2023</div>
-                        <p><a href="https://en.wikipedia.org/wiki/Artificial_intelligence" class="Blog-title">Artificial Intelligence</a></p>
-                    </div>
-                    <div class="Blog-text">
-                        <p class="descr">Artificial Intelligence (AI) is a transformative field of computer science that focuses on creating intelligent machines capable of performing tasks that typically require human intelligence. It encompasses various subfields such as machine learning, natural language processing, computer vision, and robotics, among others.
+                    <div class="container__home__blog-box__blog-text fs-6 overflow-y-scroll h-25 mb-3 p-2">
+                        <p class="descr w-100 p-2 h-25">Artificial Intelligence (AI) is a transformative field of computer science that focuses on creating intelligent machines capable of performing tasks that typically require human intelligence. It encompasses various subfields such as machine learning, natural language processing, computer vision, and robotics, among others.
 
                             At its core, AI aims to develop algorithms and systems that can simulate human-like intelligence, enabling machines to perceive, reason, learn, and make decisions. This is achieved through the analysis of large datasets and the creation of models that can recognize patterns, extract meaningful insights, and make predictions or take actions based on the available information.
                             
-                            Machine learning, a key component of AI, involves training algorithms to learn from data and improve their performance over time. This enables machines to automatically adapt and make accurate predictions or decisions without being explicitly programmed for every possible scenario.
-                            
-                            AI has found applications in numerous domains, revolutionizing industries and enhancing various aspects of our lives. In healthcare, AI is used for diagnosing diseases, analyzing medical images, and personalizing treatment plans. In finance, AI is employed for fraud detection, algorithmic trading, and risk assessment. In transportation, AI powers self-driving cars and optimizes traffic flow. These are just a few examples of how AI is transforming industries and improving efficiency, accuracy, and decision-making processes.
-                            
-                            However, AI also raises important ethical and societal considerations. Discussions around transparency, fairness, accountability, and privacy are essential to ensure responsible and ethical deployment of AI technologies. As AI continues to advance, it is crucial to establish frameworks and guidelines that promote the ethical use of AI and mitigate potential risks.
-                            
-                            The future of AI is promising, with ongoing research and development pushing the boundaries of what machines can achieve. As AI technologies evolve, they have the potential to solve complex problems, accelerate scientific discoveries, and shape the way we live and work. It is an exciting and rapidly evolving field that continues to captivate and inspire researchers, technologists, and innovators worldwide.</p>
+                            Machine learning, a key component of AI, involves training algorithms to learn from data and improve their performance over time. This enables machines to automatically adapt and make accurate predictions or decisions without being explicitly programmed for every possible scenario.allowing developers to identify and fix any issues or errors that may arise.</p>
                     </div>
-                    <div class="feedback">
-                        <img src="Image/icons8-heart-50.png">
-                        <img src="Image/icons8-comment-50.png">
+                    <div class="feedback d-flex justify-content-between m-2">
+                        <i class="fa-solid fa-heart fs-3"></i>
                     </div>
                 </section>
             </div>
-            <div class="blogsec2">
-                <section class="Blog-box blog3">
-                    <div class="blog-img">
-                        <img class="blogimgs" src="Image/Cyber_security.jpg" alt="cyber">
+            <div class="blog sec2 w-100">
+                <section class="container__home__blog-box blog3  rounded-5 p-3 w-100 mb-3 bg-warning bg-opacity-10">
+                    <div class="container__home__blog-box__blog-img">
+                        <img class="blogimgs w-100 object-fit-cover rounded-top img-fluid" src="Image/Cyber_security.jpg" alt="cyber">
                     </div>
-                    <div class="blogger">
-                        <img src="Image/photo_2023-11-27_17-48-15.jpg" alt="Ermi">
-                        <p>Ermiyas Tesfaye</p>
+                    <div class="blogger row border-bottom mt-3 p-3">
+                        <div class="col-auto">
+                            <i class="bi bi-person-circle fs-2 me-3"></i>
+                        </div>
+                        <div class="col">
+                            <div class="day">
+                                <p class="mb-1"><a href="https://en.wikipedia.org/wiki/Web_development" class="Blog-title fw-bold fs-5 text-decoration-none text-white">Website development</a></p>
+                                <div class="date fw-bold fs-5 text-white">November 27, 2023</div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <div class="date">27 November 2023</div>
-                        <p><a href="https://en.wikipedia.org/wiki/Computer_security" class="Blog-title">Cyber Security</a></p>
-                    </div>
-                    <div class="Blog-text">
-                        <p class="descr">Cybersecurity is a critical discipline focused on protecting computer systems, networks, and digital data from unauthorized access, attacks, and breaches. With the increasing reliance on technology and the interconnected nature of our digital world, cybersecurity plays a vital role in safeguarding sensitive information, maintaining privacy, and ensuring the integrity and availability of digital assets.
+                    <div class="container__home__blog-box__blog-text fs-6 overflow-y-scroll h-25 mb-3 p-2">
+                        <p class="descr w-100 p-2 h-25">Cybersecurity is a critical discipline focused on protecting computer systems, networks, and digital data from unauthorized access, attacks, and breaches. With the increasing reliance on technology and the interconnected nature of our digital world, cybersecurity plays a vital role in safeguarding sensitive information, maintaining privacy, and ensuring the integrity and availability of digital assets.
 
                             The field of cybersecurity encompasses a wide range of practices, technologies, and strategies aimed at mitigating risks and defending against cyber threats. These threats can come in various forms, including malware, phishing attacks, ransomware, social engineering, and advanced persistent threats (APTs). Cybersecurity professionals employ a combination of preventive, detective, and responsive measures to counteract these threats and protect organizations and individuals from potential harm.
                             
@@ -120,82 +138,69 @@
                             
                             Risk Assessment and Management: Identifying and analyzing potential vulnerabilities and threats to assess the level of risk and prioritize protective measures.
                             
-                            Network Security: Implementing robust firewalls, intrusion detection systems, and secure network protocols to protect networks from unauthorized access and intrusion.
-                            
-                            Data Protection: Employing encryption, access controls, and data backup mechanisms to safeguard sensitive information and prevent data breaches.
-                            
-                            Incident Response and Recovery: Establishing protocols and procedures to detect, respond to, and recover from security incidents effectively. This includes incident logging, analysis, and forensics to investigate and mitigate the impact of a breach or attack.
-                            
-                            Security Awareness and Training: Educating individuals and organizations about best practices, safe online behavior, and common security threats to foster a culture of cybersecurity awareness.
-                            
-                            Vulnerability Management: Conducting regular security assessments and penetration testing to identify and address vulnerabilities in software, systems, and networks.
-                            
-                            Compliance and Regulations: Adhering to legal and industry-specific regulations, such as the General Data Protection Regulation (GDPR) or Payment Card Industry Data Security Standard (PCI DSS), to ensure data privacy and protection.
-                            
-                            Cybersecurity is an ongoing and evolving process, as cyber threats constantly evolve and adapt. It requires constant vigilance, proactive measures, and collaboration among organizations, government entities, and individuals to stay ahead of potential risks.
-                            
-                            By implementing robust cybersecurity measures, organizations can mitigate the likelihood and impact of cyber attacks, safeguard sensitive data, and maintain the trust of their stakeholders. Additionally, individuals can take steps to protect themselves online by practicing good security hygiene, using strong passwords, being cautious of suspicious emails or links, and keeping software and devices up to date.
-                            
-                            As technology continues to advance, the importance of cybersecurity will only grow, making it an indispensable field in our digital age.</p>
+                            Network Security: Implementing robust firewalls, intrusion detection systems, and secure network protocols to protect networks from unauthorized access and intrusion.</p>
                     </div>
-                    <div class="feedback">
-                        <img src="Image/icons8-heart-50.png">
-                        <img src="Image/icons8-comment-50.png">
+                    <div class="feedback d-flex justify-content-between m-2">
+                        <i class="fa-solid fa-heart fs-3"></i>
                     </div>
                 </section>
-                <section class="Blog-box blog4">
-                    <div class="blog-img">
-                        <img class="blogimgs" src="Image/hacking.png" alt="hack">
+                <section class="container__home__blog-box blog4  rounded-5 p-3 w-100 mb-3 bg-warning bg-opacity-10">
+                    <div class="container__home__blog-box__blog-img">
+                        <img class="blogimgs w-100 object-fit-cover rounded-top img-fluid" src="Image/hacking.png" alt="hack">
                     </div>
-                    <div class="blogger">
-                        <img class="blogimgs" src="Image/photo_2023-11-27_17-48-15.jpg" alt="Ermi">
-                        <p>Ermiyas Tesfaye</p>
+                    <div class="blogger row border-bottom mt-3 p-3">
+                        <div class="col-auto">
+                            <i class="bi bi-person-circle fs-2 me-3"></i>
+                        </div>
+                        <div class="col">
+                            <div class="day">
+                                <p class="mb-1"><a href="https://en.wikipedia.org/wiki/Web_development" class="Blog-title fw-bold fs-5 text-decoration-none text-white">Website development</a></p>
+                                <div class="date fw-bold fs-5 text-white">November 27, 2023</div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <div class="date">27 November 2023</div>
-                        <p><a href="https://en.wikipedia.org/wiki/Hacker" class="Blog-title">How to develop a website</a></p>
-                    </div>
-                    <div class="Blog-text">
-                        <p class="descr">Hacking refers to the unauthorized access, manipulation, or exploitation of computer systems, networks, or digital resources. It is important to note that hacking can be both malicious and illegal when performed without proper authorization or in violation of computer crime laws. However, there is also a legitimate field of ethical hacking, known as "penetration testing" or "white-hat hacking," which involves authorized individuals testing systems for vulnerabilities in order to improve security.
+                    <div class="container__home__blog-box__blog-text fs-6 overflow-y-scroll h-25 mb-3 p-2">
+                        <p class="descr w-100 p-2 h-25">Hacking refers to the unauthorized access, manipulation, or exploitation of computer systems, networks, or digital resources. It is important to note that hacking can be both malicious and illegal when performed without proper authorization or in violation of computer crime laws. However, there is also a legitimate field of ethical hacking, known as "penetration testing" or "white-hat hacking," which involves authorized individuals testing systems for vulnerabilities in order to improve security.
 
                             Malicious hacking involves individuals or groups with malicious intent seeking to gain unauthorized access to systems or networks for various purposes, such as stealing sensitive information, causing disruption, or committing fraud. These malicious hackers, known as "black-hat hackers," employ various techniques and tools to exploit vulnerabilities in software, systems, or human behavior. This can include exploiting weak passwords, software vulnerabilities, social engineering tactics, or employing sophisticated attack methods.
                             
-                            Hacking can have serious consequences, including financial loss, reputational damage, privacy breaches, and disruption of critical services. Organizations and individuals need to be proactive in implementing robust security measures to protect against hacking attempts and mitigate risks. This includes practices such as employing strong passwords, keeping software and systems up to date, using encryption, implementing firewalls and intrusion detection systems, and conducting regular security assessments.
-                            
-                            Ethical hacking, on the other hand, is a legitimate and controlled practice conducted by authorized individuals or organizations to identify and address vulnerabilities in systems and networks. Ethical hackers, also known as "white-hat hackers" or "penetration testers," use their skills and knowledge to simulate real-world attacks and help organizations strengthen their security posture. Ethical hacking plays a vital role in improving cybersecurity by identifying weaknesses and providing recommendations for remediation.
-                            
-                            It is crucial to distinguish between illegal hacking and ethical hacking. Engaging in unauthorized hacking activities can result in severe legal consequences, including criminal charges and penalties. Organizations should always seek proper authorization and engage reputable and skilled professionals when conducting ethical hacking or security assessments.
-                            
-                            In summary, hacking encompasses both malicious and ethical activities. Malicious hacking involves unauthorized access and exploitation of computer systems with malicious intent, while ethical hacking is a controlled and authorized practice aimed at identifying vulnerabilities for the purpose of improving security. Promoting cybersecurity awareness, implementing robust security measures, and adhering to legal and ethical guidelines are essential in safeguarding against hacking attempts and protecting digital assets.</p>
-                        </div>
+                            Hacking can have serious consequences, including financial loss, reputational damage, privacy breaches, and disruption of critical services.  </p>
                     </div>
-                    <div class="feedback">
-                        <img src="Image/icons8-heart-50.png">
-                        <img src="Image/icons8-comment-50.png">
+                    <div class="feedback d-flex justify-content-between m-2">
+                        <i class="fa-solid fa-heart fs-3"></i>
                     </div>
                 </section>
             </div>     
         </div>
     </main>
-    <footer class="footer">
-        <div class="foot">
-            <div class="logo">
-                <h4>Ermi T.</h4>
-                <p></p>
-            </div>
-            <div class="social">
-                <h4>Follow Me</h4>
-                <div class="Sociallinks">
-                    <a href="https://www.facebook.com/ermiyas.tesfaye.7545"><img src="Image/icons8-facebook-48.png"></a>
-                    <a href="https://www.instagram.com/ermi695/"><img src="Image/icons8-instagram-48.png"></a>
-                    <a href="https://t.me/black6t"><img src="Image/icons8-telegram-48.png"></a>
-                    <a href="https://www.linkedin.com/in/ermiyas-tesfaye-a96190253/"><img src="Image/icons8-linkedin-48.png"></a>
+    <footer>
+        <div class="foot container-sm pb-5 border-bottom border-3">
+            <div class="row justify-content-between">
+                <div class="my__logo col-12  col-lg-7">
+                    <h4 class="h1 text-white text-center text-lg-start ">Ermi T.</h4>
+                </div>
+                <div class="foot__social col-5 d-flex flex-column align-items-center align-items-lg-end  w-100">
+                    <h4 class=" text-white me-4 text-center">Follow Me</h4>
+                    <div class="foot__social__Sociallinks text-center d-flex flex-row justify-content-between ">
+                        <a href="https://www.facebook.com/ermiyas.tesfaye.7545" class="me-4"><i class="bi bi-facebook text-white fs-4"></i></a>
+                        <a href="https://www.instagram.com/ermi695/" class="me-4 "><i class="bi bi-instagram text-white fs-4"></i></a>
+                        <a href="https://t.me/black6t" class="me-4 "><i class="bi bi-telegram text-white fs-4"></i></a>
+                        <a href="https://www.linkedin.com/in/ermiyas-tesfaye-a96190253/" class="me-4"><i class="bi bi-linkedin text-white fs-4"></i></a>
+                    </div>
                 </div>
             </div>
+            
         </div>
-        <div class="end">
-            <p>&copy; CopyRight 2023</p>
+        <div class="end text-center">
+            <p class="fw-bold text-white m-2 ">&copy; Copyright 2023</p>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
